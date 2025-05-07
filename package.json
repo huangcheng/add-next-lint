@@ -1,0 +1,69 @@
+{
+  "name": "add-next-lint",
+  "version": "1.0.0",
+  "description": "Add Additional Linting Tools for Next.js Projects",
+  "main": "src/index.ts",
+  "bin": {
+    "add-next-lint": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc && tsc-alias && cpy --flat src/templates dist/templates",
+    "watch": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")",
+    "lint": "eslint --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "next",
+    "eslint",
+    "lint",
+    "typescript",
+    "cspell",
+    "husky"
+  ],
+  "author": "HUANG Cheng <cheng@duck.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.10.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@cspell/eslint-plugin": "^9.0.0",
+    "@eslint/js": "^9.26.0",
+    "@next/eslint-plugin-next": "^15.3.1",
+    "@types/cross-spawn": "^6.0.6",
+    "@types/node": "^22.15.11",
+    "@types/progress": "^2.0.7",
+    "commitizen": "^4.3.1",
+    "concurrently": "^9.1.2",
+    "cpy-cli": "^5.0.0",
+    "cspell": "^9.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-unicorn": "^59.0.1",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "cross-spawn": "^7.0.6",
+    "progress": "^2.0.3"
+  }
+}

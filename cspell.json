@@ -1,0 +1,14 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [],
+  "dictionaries": ["typescript", "node", "html", "css", "fonts", "project"],
+  "dictionaryDefinitions": [
+    {
+      "name": "project",
+      "path": "dict/project.txt"
+    }
+  ],
+  "ignorePaths": ["src/templates/**","node_modules/**", "dist/**", "pnpm-lock.yaml", "tsconfig.json"],
+  "useGitignore": true
+}

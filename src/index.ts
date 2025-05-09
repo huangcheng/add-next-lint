@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { spawnSync } from 'node:child_process';
 import {
   copyFileSync,
@@ -157,7 +159,6 @@ const main = () => {
 
   console.log(chalk.green('Linting tools added successfully!'));
 
-  // eslint-disable-next-line unicorn/no-process-exit
   process.exit(0);
 };
 

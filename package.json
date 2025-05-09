@@ -7,7 +7,7 @@
     "add-next-lint": "./dist/index.js"
   },
   "scripts": {
-    "build": "rimraf dist && tsc && tsc-alias && cpy --flat src/templates dist/templates",
+    "build": "rimraf dist && tsc && tsc-alias && cpy 'src/templates/**/*' dist/templates",
     "watch": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")",
     "lint": "eslint --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -32,7 +32,6 @@
     "@commitlint/config-conventional": "^19.8.0",
     "@cspell/eslint-plugin": "^9.0.0",
     "@eslint/js": "^9.26.0",
-    "@next/eslint-plugin-next": "^15.3.1",
     "@types/cross-spawn": "^6.0.6",
     "@types/node": "^22.15.11",
     "@types/progress": "^2.0.7",
@@ -43,7 +42,6 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.2",
-    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.4.0",
     "eslint-plugin-unicorn": "^59.0.1",
     "globals": "^16.0.0",

@@ -1,6 +1,7 @@
 export const packages = [
   '@commitlint/cli',
   '@commitlint/config-conventional',
+  'cz-conventional-changelog',
   '@cspell/eslint-plugin',
   '@eslint/config-helpers',
   '@eslint/eslintrc',

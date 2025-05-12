@@ -1,8 +1,8 @@
 {
   "name": "add-next-lint",
-  "version": "0.0.2-dev",
+  "version": "0.0.3-dev",
   "description": "Add Additional Linting Tools for Next.js Projects",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "bin": {
     "add-next-lint": "./dist/index.js"
   },

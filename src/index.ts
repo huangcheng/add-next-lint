@@ -111,7 +111,7 @@ const main = () => {
 
   console.log(chalk.green('Config files copied successfully!'));
 
-  console.log('Adding husky hooks...');
+  console.log(chalk.blue('Adding husky hooks...'));
 
   if (!existsSync(path.join(directory, '.husky'))) {
     process.chdir(directory);
